@@ -1,0 +1,106 @@
+body {
+  height: 100vh;
+  background-color: #7fffd4;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.monitor,
+.laptop,
+.tablet,
+.mobile {
+  text-align: center;
+  font-size: 40px;
+  display: none;
+}
+
+/* 0-426, 426-769, 769-1025 I give this value just because when I manually input screen size 425px it looked like 769px so I fixed this issue I tooked +1 to every single value so we can check it given a particular size in responsive.*/
+
+@media screen and (min-width: 0px) {
+  body {
+    background-color: #d2183d;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    background-color: #00ffff;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    background-color: #b0830f;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .laptop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: #228b22;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .monitor {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1501px) {
+    body {
+      background-color: #7fffd4;
+    }
+  
+    .mobile {
+      display: none;
+    }
+  
+    .tablet {
+      display: none;
+    }
+  
+    .laptop {
+      display: none;
+    }
+  
+    .monitor {
+      display: none;
+    }
+  }
